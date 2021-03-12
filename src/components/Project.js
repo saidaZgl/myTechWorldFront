@@ -3,7 +3,6 @@ import {
   Col,
   Card,
   CardImg,
-  CardText,
   CardBody,
   CardTitle,
   CardSubtitle,
@@ -42,6 +41,7 @@ const style = {
   }
 };
 
+//Composant de présentation
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -127,10 +127,11 @@ class Project extends Component {
   }
 }
 
+// envoie l'info au reducer
 function mapDispatchToProps(dispatch) {
   return {
     onFavoriteClick: function() {
-      dispatch({ type: "addFavorite" });
+      dispatch({ type: "addFavorite" }); //Création de l'action
     }
   };
 }

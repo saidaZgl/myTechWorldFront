@@ -18,7 +18,7 @@ export default class App extends Component {
       projects: null
     };
   }
-
+  //fetch dans componentDidMount() pour permettre aux éléments de s'afficher sans attendre le retour de l'API
   componentDidMount() {
     fetch("https://capsule-exams.herokuapp.com/api/capsule/projects")
       .then(response => {
@@ -51,7 +51,7 @@ export default class App extends Component {
         );
       });
     }
-
+    //Initialisation du store => rend le Store accessible à toute l'application
     return (
       <Provider store={store}>
         <div>

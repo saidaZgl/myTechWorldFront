@@ -41,6 +41,7 @@ class NavBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  //Header et liens
   render() {
     return (
       <Navbar
@@ -64,7 +65,7 @@ class NavBar extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink href="#" style={style.NavLink}>
-                TOP 3 : {this.props.count}{" "}
+                TOP 3 : {this.props.count}
               </NavLink>
             </NavItem>
           </Nav>
